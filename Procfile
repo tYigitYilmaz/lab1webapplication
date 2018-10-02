@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar  jbot-example/target/jbot-example-0.0.1-SNAPSHOT.jar
+web: java -Dserver.port=$PORT -jar  jbot-lab1webapplication/target/jbot-lab1webapplication-0.0.1-SNAPSHOT.jar
