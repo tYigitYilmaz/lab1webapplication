@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: com.yigityilmaz.lab1webapplication.Lab1webapplicationAppli
+ cation
+
