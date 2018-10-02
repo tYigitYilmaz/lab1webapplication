@@ -8,3 +8,7 @@ before_install:
 install:
 - mvn -N io.takari:maven:wrapper
 - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+deploy:
+   provider: heroku
+   api_key: d671fa4b-9e47-40d4-9f63-5bfaf64a4e81
