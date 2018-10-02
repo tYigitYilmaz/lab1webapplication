@@ -1,11 +1,15 @@
 language: java
 jdk:
-- oraclejdk8
-
-before_install:
-  - chmod +x .mvn
-install:
-- mvn -N io.takari:maven:wrapper
-- ./mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+  - oraclejdk8
+  - oraclejdk9
+  - openjdk8
 script:
-- mvn test
+  - jdk_switcher use oraclejdk8
+  - # do stuff with Java 8
+  - jdk_switcher use openjdk8
+  - # do stuff with open Java 8
+sudo: false
+addons:
+  apt:
+    packages:
+      - oracle-java8-installer
