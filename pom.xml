@@ -63,6 +63,22 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>com.heroku.sdk</groupId>
+                <artifactId>heroku-maven-plugin</artifactId>
+                <version>1.1.1</version>
+                <configuration>
+                    <appName>lab1webapplication</appName>
+                    <includeTarget>false</includeTarget>
+                    <includes>
+                        <include>${basedir}/$lab1webapplication:war exploded</include>
+                    </includes>
+                    <jdkVersion>1.8</jdkVersion>
+                    <processTypes>
+                        <web>java $JAVA_OPTS -jar $lab1webapplication:war exploded</web>
+                    </processTypes>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
