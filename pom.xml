@@ -63,6 +63,18 @@
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
         </dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>3.0.1</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.github.jsimone</groupId>
+                <artifactId>webapp-runner</artifactId>
+                <version>7.0.22</version>
+                <scope>provided</scope>
+            </dependency>
     </dependencies>
 
     <build>
